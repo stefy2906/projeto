@@ -36,7 +36,7 @@ export default async function Produto({ params }) {
             <p>{produto.preco}</p>
             <p>{produto.descricao}</p>
             <p>{produto.data_cadastro}</p>
-            <img class:'h-auto max max-w-lg rounded-lg' src={produto.imagem}></img>
+            <img src={produto.imagem}></img>
             <br/>
             <button onClick={e => e.preventDefault(remover())}>REMOVER</button>
 
