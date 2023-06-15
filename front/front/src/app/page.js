@@ -11,7 +11,8 @@ export default async function Home() {
 
   return (
     <div>
-    <main> <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
+    <main> 
+      <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
 
       {produtos.map(produtos => (
         <div key={produtos.id}>
