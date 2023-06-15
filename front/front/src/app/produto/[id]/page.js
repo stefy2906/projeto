@@ -8,7 +8,7 @@ export default async function Pessoa({ params }) {
 
     const idJson = JSON.stringify(id);
 
-    const req = await fetch("http://localhost:3003/produtos", {
+    const req = await fetch("http://localhost:3001/produtos", {
         method: "POST",
         cache: "no-cache",
         headers: { 'content-type': 'application/json' },
