@@ -1,0 +1,7 @@
+.main {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto";
+    background:  url("../../img/fundo.jpg") fixed top center;
+   }
