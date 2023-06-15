@@ -31,7 +31,7 @@ export default function Cadastro() {
 
     return (
         <div className={styles.main}>
-            <h1>CADASTRAR</h1><br/>
+            <h1>Cadastrar Produtos</h1><br/>
             <form  onSubmit={cadastrar}>
                 <input
                     type="text"
@@ -63,7 +63,7 @@ export default function Cadastro() {
                     nome="imagem"
                     onChange={e => setImagem(e.target.value)}
                 /><br/>
-                <button type='submit'>Cadastrar</button>
+                <button type='submit'>Cadastrar</button><br/>
                 <div>
                     <a href='/'>Voltar</a>
                 </div>
