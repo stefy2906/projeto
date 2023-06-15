@@ -10,7 +10,7 @@ export default async function Home() {
   const produtos = await req.json();
 
   return (
-    <div className={styles.main}>
+    <div>
     <main> <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
 
       {produtos.map(produtos => (
@@ -21,6 +21,6 @@ export default async function Home() {
         </div> 
       ))}
     </main>
-    </div> 
+    </div>
   )
 }

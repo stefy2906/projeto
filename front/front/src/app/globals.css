@@ -1,7 +1,16 @@
-.main {
+div {
     margin: 0;
     padding: 0;
-    height: 100vh;
     font-family: "Roboto";
-    background:  url("../../img/fundo.jpg") fixed top center;
+    background-color: #fcf3cf ;
    }
+button, Link {
+    border: none;
+    color: white;
+    background: red;
+    padding: 8px 8px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 120px;
+  }

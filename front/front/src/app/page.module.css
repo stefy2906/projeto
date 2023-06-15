@@ -1,9 +1,15 @@
+.titulo{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 .main {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 100vh;
   font-family: "Roboto";
   background:  url("../../img/fundo.jpg") fixed top center;
@@ -12,12 +18,15 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    border-radius: 5px;
-    padding: 15px 25px;
-    width: 80%;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 20px 35px;
+    width: 30%;
     margin: 0;
+    display: block;
+    margin: 5px auto 5px auto;
   }
- .a {
+ .a, .button {
     border: none;
     color: white;
     background: red;

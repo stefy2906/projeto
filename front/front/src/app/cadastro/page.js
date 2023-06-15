@@ -32,8 +32,9 @@ export default function Cadastro() {
     return (
         <div className={styles.main}>
             <form className={styles.form} onSubmit={cadastrar}>
-            <h1>Cadastrar Produtos</h1><br/>
+            <h1 >Cadastrar Produtos</h1><br/>
                 <input
+                    className={styles.input}
                     type="text"
                     placeholder='Nome:'
                     nome="nome"
@@ -62,13 +63,13 @@ export default function Cadastro() {
                     placeholder='Imagem:'
                     nome="imagem"
                     onChange={e => setImagem(e.target.value)}
-                /><br/>
-
-                <button type='submit'>Cadastrar</button><br/>
-                <div><br/>
+                /><br/><br/>
+                <button type='submit' className={styles.button}>Cadastrar</button>
+                <br/>
                     <a className={styles.a} href='/'>Voltar</a>
-                </div>
+                
             </form>
+            
         </div>
     );
 }
