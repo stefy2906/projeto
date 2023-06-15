@@ -46,7 +46,7 @@ class Produto {
     }
   }
 
-  static async delete(id) {
+  static async Delete(id) {
     try {
       const connect = await db.connect();
       const sql = "DELETE FROM produtos WHERE id=$1 RETURNING id, nome, data_cadastro, preco, descricao, imagem;";
