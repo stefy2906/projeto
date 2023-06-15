@@ -7,7 +7,7 @@ let connect = async function () {
     }
 
     const pool = new Pool({
-      connectionString: 'postgres://xvgxhoif:aCfrijJq5cyxFUQEw6-kVDvJG5Jc4lYS@tyke.db.elephantsql.com/xvgxhoif'
+      connectionString: 'postgres://usfomxlt:OYem_an102jADVrzlq-lej7GxPb44Y9i@tyke.db.elephantsql.com/usfomxlt'
     });
 
     global.connection = pool;
