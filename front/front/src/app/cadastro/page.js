@@ -22,7 +22,7 @@ export default function Cadastro() {
             imagem: imagem
         }
         const produtoJson = JSON.stringify(produto);
-        fetch("http://localhost:3003/produto", {
+        fetch("http://localhost:3003/produtos", {
             method: "POST",
             headers: { "content-Type": "application/json" },
             body: produtoJson
