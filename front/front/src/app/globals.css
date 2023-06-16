@@ -4,7 +4,7 @@ div {
     font-family: "Roboto";
     background-color: #fcf3cf ;
    }
-button, Link {
+button {
     border: none;
     color: white;
     background: red;
@@ -14,3 +14,16 @@ button, Link {
     margin: 10px auto 10px auto;
     width: 120px;
   }
+  h1{
+    color:red;
+    font-family: 'Lucida Sans';
+  }
+a{
+  border: none;
+  color: white;
+  background: red;
+  padding: 8px 8px;
+  border-radius: 5px;
+  display: block;
+  width: 100px;
+}

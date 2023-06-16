@@ -12,13 +12,14 @@ export default async function Home() {
   return (
     <div>
     <main> 
-      <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
-
+      <h1>Nossos Produtos</h1><br/>
+      <a href="/cadastro" className='voltar'> CADASTRAR </a>
+        <br/>
       {produtos.map(produtos => (
         <div key={produtos.id}>
           <p>{produtos.nome}</p>
           <p>{produtos.preco}</p>
-          <Link href={`/produto/${produtos.id}`}>ver mais</Link>
+          <a href={`/produto/${produtos.id}`}>ver mais</a>
         </div> 
       ))}
     </main>

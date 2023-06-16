@@ -21,10 +21,20 @@ app.get('/produtos', async function(req, res){
   }
 });
 
+app.get('/produto', async function(req, res){
+  try {
+    var produtos = await Produto.select();
+    res.json(produtos.rows);
+  } catch (error) {
+    console.error('Erro ao buscar produto:', error);
+    res.status(500).json({ error: 'Ocorreu um erro ao buscar produto' });
+  }
+});
+
 app.post('/produtos', async function(req, res){
   try {
-    var produto = await Produto.selectOne(req.body.id);
-    res.json(produto.rows[0]);
+    var produtos = await Produto.selectOne(req.body.id);
+    res.json(produtos.rows[0]);
   } catch (error) {
     console.error('Erro ao buscar produtos:', error);
     res.status(500).json({ error: 'Ocorreu um erro ao buscar produtos' });
@@ -42,6 +52,17 @@ app.post('/produto', async function(req,res){
 })
 
 app.delete('/produtos', async function(req, res){
+  try {
+    console.log(req.body.id)
+    var produto = await Produto.delete(req.body.id);
+    res.json(produto.rows);
+  } catch (error) {
+    console.error('Erro ao atualizar produtos:', error);
+    res.status(500).json({ error: 'Ocorreu um erro ao deletar produtos' });
+  }
+});
+
+app.delete('/produto', async function(req, res){
   try {
     console.log(req.body.id)
     var produto = await Produto.delete(req.body.id);
