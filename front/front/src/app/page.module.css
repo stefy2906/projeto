@@ -36,3 +36,8 @@
     margin: 10px auto 10px auto;
     width: 120px;
   }
+ input{
+    width: 40px;
+    border-radius: 5px;
+    border: 2px solid red;
+  }

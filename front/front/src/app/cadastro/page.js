@@ -35,7 +35,6 @@ export default function Cadastro() {
             <form className={styles.form} onSubmit={cadastrar}>
             <h1>Cadastrar Produtos:</h1><br/>
                 <input
-                    className={styles.input}
                     type="text"
                     placeholder='Nome:'
                     nome="nome"
