@@ -39,8 +39,6 @@ export default async function Produto({ params }) {
             <img width="9%" src={produto.imagem}></img>
             <br/>
             <button onClick={e => e.preventDefault(remover())}>REMOVER</button>
-
         </div>
-
     )
 }

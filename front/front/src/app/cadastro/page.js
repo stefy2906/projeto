@@ -33,7 +33,7 @@ export default function Cadastro() {
     return (
         <div className={styles.main}>
             <form className={styles.form} onSubmit={cadastrar}>
-            <h1>Cadastrar Produtos</h1><br/>
+            <h1>Cadastrar Produtos:</h1><br/>
                 <input
                     className={styles.input}
                     type="text"
