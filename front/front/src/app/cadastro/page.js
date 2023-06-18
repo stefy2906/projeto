@@ -14,25 +14,26 @@ export default function Cadastro() {
     const cadastrar = (e) => {
         e.preventDefault()
         
-        const produto = {
+        const Produto = {
             nome: nome,
             data_cadastro: data_cadastro,
             preco: preco,
             descricao: descricao,
             imagem: imagem
         }
-        const produtoJson = JSON.stringify(produto);
-        fetch("http://localhost:3003/produtos", {
+        const produtoJson = JSON.stringify(Produto);
+        const req = fetch("http://localhost:3003/produto", {
             method: "POST",
             headers: { "content-Type": "application/json" },
             body: produtoJson
         }).then(function(){ route.push("/")}).catch(()=> console.log("Não foi possível cadastrar!"))
+        console.log(req)
     }
 
     return (
         <div className={styles.main}>
             <form className={styles.form} onSubmit={cadastrar}>
-            <h1 >Cadastrar Produtos</h1><br/>
+            <h1>Cadastrar Produtos</h1><br/>
                 <input
                     className={styles.input}
                     type="text"
@@ -67,9 +68,7 @@ export default function Cadastro() {
                 <button type='submit' className={styles.button}>Cadastrar</button>
                 <br/>
                     <a className={styles.a} href='/'>Voltar</a>
-                
             </form>
-            
         </div>
     );
 }
