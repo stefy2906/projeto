@@ -54,10 +54,11 @@ app.post('/produto', async function(req,res){
 app.delete('/produtos', async function(req, res){
   try {
     console.log(req.body.id)
-    var produto = await Produto.delete(req.body.id);
+    var produto = await 
+    Produto.delete(req.body.id);
     res.json(produto.rows);
   } catch (error) {
-    console.error('Erro ao atualizar produtos:', error);
+    console.error('Erro ao deletar produtos:', error);
     res.status(500).json({ error: 'Ocorreu um erro ao deletar produtos' });
   }
 });
@@ -65,10 +66,11 @@ app.delete('/produtos', async function(req, res){
 app.delete('/produto', async function(req, res){
   try {
     console.log(req.body.id)
-    var produto = await Produto.delete(req.body.id);
+    var produto = await
+    Produto.delete(req.body.id);
     res.json(produto.rows);
   } catch (error) {
-    console.error('Erro ao atualizar produto:', error);
+    console.error('Erro ao deletar produto:', error);
     res.status(500).json({ error: 'Ocorreu um erro ao deletar produto' });
   }
 });
