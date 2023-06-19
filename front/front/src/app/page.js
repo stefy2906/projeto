@@ -15,11 +15,11 @@ export default async function Home() {
       <h1>Nossos Produtos</h1><br/>
       <a href="/cadastro" className='voltar'> CADASTRAR </a>
         <br/>
-      {produtos.map(produtos => (
-        <div key={produtos.id}>
-          <p>{produtos.nome}</p>
-          <p>{produtos.preco}</p>
-          <a href={`/produto/${produtos.id}`}>ver mais</a>
+      {produtos.map(produto => (
+        <div key={produto.id}>
+          <p>{produto.nome}</p>
+          <p>{produto.preco}</p>
+          <a href={`/produto/${produto.id}`}>ver mais</a>
         </div> 
       ))}
     </main>
