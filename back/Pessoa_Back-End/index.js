@@ -21,7 +21,7 @@ app.get('/produtos', async function(req, res){
   }
 });
 
-app.get('/produto', async function(req, res){
+app.get('/produtos', async function(req, res){
   try {
     var produtos = await Produto.Select();
     res.json(produtos.rows);
@@ -63,7 +63,7 @@ app.delete('/produtos', async function(req, res){
   }
 });
 
-app.delete('/produto', async function(req, res){
+app.delete('/produtos', async function(req, res){
   try {
     console.log(req.body.id)
     var produto = await
